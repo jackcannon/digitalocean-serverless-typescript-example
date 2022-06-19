@@ -1,0 +1,12 @@
+{
+  "name": "digitalocean-serverless-typescript-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "cd packages/sample/hello && yarn build",
+    "deploy": "doctl serverless deploy .",
+    "upload": "yarn build && yarn deploy",
+    "postinstall": "cd packages/sample/hello && yarn install"
+  }
+}

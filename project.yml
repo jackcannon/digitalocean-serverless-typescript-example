@@ -1,0 +1,6 @@
+packages:
+  - name: sample
+    actions:
+      - name: hello
+        main: dist/index.main
+        runtime: 'nodejs:default'

@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "noImplicitAny": false,
+    "sourceMap": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "declaration": false,
+    "listFiles": false,
+    "esModuleInterop": true
+  },
+  "exclude": [".vscode", ".serverless", ".nimbella", ".git", "node_modules"],
+  "compileOnSave": false,
+  "buildOnSave": false
+}
