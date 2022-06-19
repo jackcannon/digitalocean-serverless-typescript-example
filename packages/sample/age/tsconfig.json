@@ -2,8 +2,8 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "es6",
-    "rootDir": "./src",
     "outDir": "./dist",
+    "baseUrl": ".",
     "noImplicitAny": false,
     "sourceMap": false,
     "emitDecoratorMetadata": true,
@@ -11,7 +11,18 @@
     "moduleResolution": "node",
     "declaration": false,
     "listFiles": false,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "paths": {
+      "@common/*": ["../../../common/*"]
+    },
+    "plugins": [
+      {
+        "transform": "typescript-transform-paths"
+      }
+    ]
   },
   "exclude": [".vscode", ".serverless", ".nimbella", ".git", "node_modules"],
   "compileOnSave": false,

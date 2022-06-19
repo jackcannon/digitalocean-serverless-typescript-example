@@ -1,6 +1,9 @@
 packages:
   - name: sample
     actions:
-      - name: hello
-        main: dist/index.main
+      - name: age
+        main: dist/packages/sample/age/src/age.main
+        runtime: 'nodejs:default'
+      - name: name
+        main: dist/packages/sample/name/src/name.main
         runtime: 'nodejs:default'

@@ -4,9 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "cd packages/sample/hello && yarn build",
+    "build": "yarn build:sample:age && yarn build:sample:name",
+    "build:sample:age": "cd packages/sample/age && yarn build",
+    "build:sample:name": "cd packages/sample/name && yarn build",
     "deploy": "doctl serverless deploy .",
     "upload": "yarn build && yarn deploy",
-    "postinstall": "cd packages/sample/hello && yarn install"
+    "postinstall": "yarn postinstall:sample:age && yarn postinstall:sample:name",
+    "postinstall:sample:age": "cd packages/sample/age && yarn install",
+    "postinstall:sample:name": "cd packages/sample/name && yarn install"
   }
 }

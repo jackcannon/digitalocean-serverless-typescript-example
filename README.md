@@ -39,5 +39,6 @@ yarn upload
 ### Remotely
 
 ```bash
-doctl serverless functions invoke sample/hello -p name:Jack
+doctl serverless functions invoke sample/age -p year:1992
+doctl serverless functions invoke sample/name -p firstName:Jack -p surname:Cannon
 ```
