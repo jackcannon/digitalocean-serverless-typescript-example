@@ -31,7 +31,6 @@ yarn deploy
 OR
 
 ```bash
-yarn build
 yarn upload
 ```
 
