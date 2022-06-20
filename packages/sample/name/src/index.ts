@@ -1,4 +1,4 @@
-import { toJsonResponse } from '@common/json';
+import { toJsonResponse } from './json';
 
 interface InputData {
   firstName?: string;

@@ -2,8 +2,8 @@ packages:
   - name: sample
     actions:
       - name: age
-        main: dist/packages/sample/age/src/age.main
+        main: dist/index.main
         runtime: 'nodejs:default'
       - name: name
-        main: dist/packages/sample/name/src/name.main
+        main: dist/index.main
         runtime: 'nodejs:default'

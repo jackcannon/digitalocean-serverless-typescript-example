@@ -18,20 +18,20 @@ doctl serverless status
 ```bash
 git clone git@github.com:jackcannon/digitalocean-serverless-typescript-example.git typescript-example
 cd typescript-example
-yarn
+npm install
 ```
 
 ## Step 3 - Build
 
 ```bash
-yarn build
-yarn deploy
+npm run build
+npm run deploy
 ```
 
 OR
 
 ```bash
-yarn upload
+npm run upload
 ```
 
 ## Step 4 - Run
