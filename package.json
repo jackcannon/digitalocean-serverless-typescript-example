@@ -1,5 +1,5 @@
 {
-  "name": "digitalocean-serverless-typescript-example",
+  "name": "ts-example",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
